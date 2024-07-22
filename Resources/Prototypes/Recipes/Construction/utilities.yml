@@ -859,3 +859,18 @@
   canBuildInImpassable: true
   conditions:
   - !type:WallmountCondition
+
+- type: construction
+  name: tiny fan
+  id: AtmosDeviceFanTiny
+  graph: GasUnary
+  startNode: start
+  targetNode: tinyfan
+  category: construction-category-utilities
+  description: A tiny fan. Don't stick your fingers in it!
+  icon:
+    sprite: Structures/Piping/Atmospherics/tinyfan.rsi
+    state: icon
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false
