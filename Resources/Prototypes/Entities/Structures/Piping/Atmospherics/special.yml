@@ -1,11 +1,15 @@
-# Devices which are not portable but don't link up to anything
+# Devices which are portable but don't link up to anything
 - type: entity
   id: AtmosDeviceFanTiny
   name: tiny fan
+  parent: BaseMachine
   description: A tiny fan, releasing a thin gust of air.
   placement:
     mode: SnapgridCenter
   components:
+  - type: Construction
+    graph: GasUnary
+    node: tinyfan
   - type: Transform
     anchored: true
   - type: Physics
@@ -19,12 +23,37 @@
         shape:
           !type:PhysShapeAabb
             bounds: "-0.5,-0.5,0.5,0.5"
+  - type: Anchorable
+    delay: 1
   - type: Airtight
     noAirWhenFullyAirBlocked: false
-  - type: Clickable
   - type: Tag
     tags:
       - SpreaderIgnore
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 20
+      behaviors:
+        - !type:DoActsBehavior
+          acts: [ "Destruction" ]
+    - trigger:
+        !type:DamageTrigger
+        damage: 10
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalBreak
+          params:
+            volume: -6
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          SheetSteel1:
+            min: 1
+            max: 1
 
 - type: entity
   id: AtmosDeviceFanDirectional
