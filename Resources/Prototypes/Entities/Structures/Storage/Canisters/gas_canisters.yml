@@ -49,16 +49,16 @@
     - type: Fixtures
       fixtures: 
       - shape:
-          !type:PhysShapeCircle
+        !type:PhysShapeCircle
           radius: 0.3
-          mass: 25
-          mask:
-            - MobImpassable
-          layer:
-            - Opaque
-            - MobImpassable
-            - SmallImpassable
-            - VaultImpassable
+      mass: 25
+      mask:
+        - MobImpassable
+      layer:
+        - Opaque
+        - MobImpassable
+        - SmallImpassable
+        - VaultImpassable
     - type: AtmosDevice
       requireAnchored: false
       joinSystem: true
