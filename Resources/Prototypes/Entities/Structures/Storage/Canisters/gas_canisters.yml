@@ -47,18 +47,18 @@
     - type: Physics
       bodyType: Dynamic
     - type: Fixtures
-      fixtures: 
-      - shape:
-        !type:PhysShapeCircle
-          radius: 0.3
-      mass: 25
-      mask:
-        - MobImpassable
-      layer:
-        - Opaque
-        - MobImpassable
-        - SmallImpassable
-        - VaultImpassable
+      fixtures:
+        - shape:
+            !type:PhysShapeCircle
+            radius: 0.4
+          mass: 25
+          mask:
+            - MobImpassable
+          layer:
+            - Opaque
+            - MobImpassable
+            - SmallImpassable
+            - VaultImpassable
     - type: AtmosDevice
       requireAnchored: false
       joinSystem: true
