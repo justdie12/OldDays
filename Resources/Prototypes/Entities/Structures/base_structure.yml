@@ -41,10 +41,10 @@
   - type: Physics
     bodyType: Dynamic
   - type: Fixtures
-    fixtures:
+    fixtures: 
     - shape:
-        !type:PhysShapeAabb
-          bounds: "-0.45,-0.45,0.45,0.45"
+        !type:PhysShapeCircle
+          radius: 0.5
       mass: 50
       layer:
       - SmallImpassable

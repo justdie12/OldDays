@@ -9,10 +9,10 @@
   - type: Physics
     bodyType: Static
   - type: Fixtures
-    fixtures:
+    fixtures: 
     - shape:
-        !type:PhysShapeAabb
-          bounds: "-0.45,-0.45,0.45,0.45"
+        !type:PhysShapeCircle
+          radius: 0.4
       mass: 25
       layer:
       - MobMask

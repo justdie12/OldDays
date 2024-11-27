@@ -17,10 +17,10 @@
   - type: Physics
     bodyType: Static
   - type: Fixtures
-    fixtures:
+    fixtures: 
     - shape:
-        !type:PhysShapeAabb
-          bounds: "-0.25,-0.5,0.25,0.5"
+        !type:PhysShapeCircle
+          radius: 0.4
       mask:
       - Impassable
       - VaultImpassable

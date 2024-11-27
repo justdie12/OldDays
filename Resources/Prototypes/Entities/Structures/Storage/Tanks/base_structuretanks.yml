@@ -10,10 +10,10 @@
   - type: InteractionOutline
   - type: Physics
   - type: Fixtures
-    fixtures:
+    fixtures: 
     - shape:
-        !type:PhysShapeAabb
-          bounds: "-0.4,-0.4,0.4,0.4"
+        !type:PhysShapeCircle
+        radius: 0.35
       mass: 100
       mask:
       - Impassable

@@ -47,10 +47,10 @@
     - type: Physics
       bodyType: Dynamic
     - type: Fixtures
-      fixtures:
-        - shape:
-            !type:PhysShapeAabb
-            bounds: "-0.25,-0.25,0.25,0.25"
+      fixtures: 
+      - shape:
+          !type:PhysShapeCircle
+          radius: 0.3
           mass: 25
           mask:
             - MobImpassable
