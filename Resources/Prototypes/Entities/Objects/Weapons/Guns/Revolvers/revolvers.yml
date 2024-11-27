@@ -35,7 +35,7 @@
     - Single
     fillPrototype: CartridgeMagnum
     caliber: Magnum
-    capacity: 5
+    capacity: 6
     autoCycle: true
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/revolver.ogg
@@ -97,7 +97,7 @@
     - Single
     fillPrototype: CartridgeMagnum
     caliber: Magnum
-    capacity: 7
+    capacity: 6
     soundEmpty:
       path: /Audio/Weapons/Guns/Empty/empty.ogg
     soundGunshot:
@@ -125,7 +125,7 @@
     - Single
     fillPrototype: CartridgeMagnum
     caliber: Magnum
-    capacity: 7
+    capacity: 6
     soundEmpty:
       path: /Audio/Weapons/Guns/Empty/empty.ogg
     soundGunshot:
@@ -154,7 +154,7 @@
     - Single
     fillPrototype: CartridgePistol  
     caliber: Pistol
-    capacity: 5
+    capacity: 6
     soundEmpty:
       path: /Audio/Weapons/Guns/Empty/empty.ogg
     soundGunshot:
