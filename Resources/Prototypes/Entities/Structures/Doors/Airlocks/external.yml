@@ -5,7 +5,7 @@
   description: It opens, it closes, it might crush you, and there might be only space behind it. Has to be manually activated.
   components:
   - type: Door
-    bumpOpen: false
+    bumpOpen: False
     crushDamage:
       types:
         Blunt: 15
@@ -23,11 +23,24 @@
     - type: WiresVisualizer
 
 - type: entity
-  parent: AirlockExternal
+  parent: AirlockGlass
   id: AirlockExternalGlass
   suffix: Glass, External
   components:
-  - type: Occluder
-    enabled: false
   - type: Sprite
     sprite: Structures/Doors/Airlocks/Glass/external.rsi
+  - type: Door
+    bumpOpen: False
+    crushDamage:
+      types:
+        Blunt: 15
+    openSound:
+      path: /Audio/Machines/airlock_ext_open.ogg
+    closeSound:
+      path: /Audio/Machines/airlock_ext_close.ogg
+    denySound:
+      path: /Audio/Machines/airlock_deny.ogg
+  - type: Appearance
+    visuals:
+    - type: AirlockVisualizer
+    - type: WiresVisualizer

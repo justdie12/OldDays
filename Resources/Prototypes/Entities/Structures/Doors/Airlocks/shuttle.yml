@@ -51,7 +51,7 @@
 
 - type: entity
   id: AirlockGlassShuttle
-  parent: AirlockShuttle
+  parent: AirlockGlass
   name: external airlock
   suffix: Glass, Docking
   description: Necessary for connecting two space craft together.
@@ -76,5 +76,26 @@
       map: ["enum.DoorVisualLayers.BaseEmergencyAccess"]
     - state: panel_open
       map: ["enum.WiresVisualLayers.MaintenancePanel"]
-  - type: Occluder
-    enabled: false
+  - type: Wires
+    LayoutId: Docking
+  - type: Door
+    bumpOpen: false
+    closeTimeTwo: 0.4
+    openTimeTwo: 0.4
+    board: DoorElectronics
+    crushDamage:
+      types:
+        Blunt: 15
+    openSound:
+      path: /Audio/Effects/docking.ogg
+    closeSound:
+      path: /Audio/Effects/docking.ogg
+    denySound:
+      path: /Audio/Machines/airlock_deny.ogg
+  - type: Airtight
+    fixVacuum: true
+    airBlockedDirection:
+      - South
+  - type: Tag
+    tags:
+      - ForceNoFixRotations
