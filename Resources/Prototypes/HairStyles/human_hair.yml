@@ -161,6 +161,12 @@
     state: braidtail
   type: spriteAccessory
 - categories: HumanHair
+  id: HumanHairDave
+  sprite:
+    sprite: Mobs/Customization/human_hair.rsi
+    state: dave
+  type: spriteAccessory
+- categories: HumanHair
   id: HumanHairBun
   sprite:
     sprite: Mobs/Customization/human_hair.rsi
@@ -1042,3 +1048,4 @@
     sprite: Mobs/Customization/human_hair.rsi
     state: wisp
   type: spriteAccessory
+
